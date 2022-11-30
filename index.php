@@ -8,25 +8,36 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    var xArray = [50,60,70,80,90,100,110,120,130,140,150];
+  </body>
+</html>
+
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = [50,60,70,80,90,100,110,120,130,140,150];
 var yArray = [7,8,8,9,9,9,10,11,14,14,15];
 
 // Define Data
 var data = [{
-  x: xArray,
-  y: yArray,
-  mode:"markers",
-  type:"scatter"
+  x:xArray,
+  y:yArray,
+  mode:"markers"
 }];
 
 // Define Layout
 var layout = {
   xaxis: {range: [40, 160], title: "Square Meters"},
-  yaxis: {range: [5, 16], title: "Price in Millions"},
+  yaxis: {range: [5, 16], title: "Price in Millions"},  
   title: "House Prices vs. Size"
 };
 
+// Display using Plotly
 Plotly.newPlot("myPlot", data, layout);
-  </body>
+</script>
+
+</body>
 </html>
