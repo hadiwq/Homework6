@@ -39,36 +39,33 @@ var layout = {
 Plotly.newPlot("myPlot", data, layout);
 </script>
 
-</body>
-</html>
-
-<html>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
 
-<div id="myPlot1" style="width:100%;max-width:700px"></div>
+<div id="myPlot2" style="width:100%;max-width:700px"></div>
 
 <script>
-var1 xArray = [50,60,70,80,90,100,110,120,130,140,150];
-var1 yArray = [7,8,8,9,9,9,10,11,14,14,15];
+var xArray = [50,60,70,80,90,100,110,120,130,140,150];
+var yArray = [7,8,8,9,9,9,10,11,14,14,15];
 
 // Define Data
-var1 data = [{
-  x: xArray,
-  y: yArray,
-  mode:"lines"
+var data = [{
+  x:xArray,
+  y:yArray,
+  mode:"markers"
 }];
 
 // Define Layout
-var1 layout = {
+var layout = {
   xaxis: {range: [40, 160], title: "Square Meters"},
   yaxis: {range: [5, 16], title: "Price in Millions"},  
   title: "House Prices vs. Size"
 };
 
 // Display using Plotly
-Plotly.newPlot("myPlot1", data, layout);
+Plotly.newPlot("myPlot2", data, layout);
 </script>
-
 </body>
 </html>
+
