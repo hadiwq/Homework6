@@ -96,6 +96,27 @@ const layout = {title: "y = " + exp};
 // Display using Plotly
 Plotly.newPlot("myPlot3", data, layout);
 </script>
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot4" style="width:100%;max-width:700px"></div>
+
+<script>
+var xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yArray = [55, 49, 44, 24, 15];
+
+var data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar"
+}];
+
+var layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot4", data, layout);
+</script>
+
 </body>
 </html>
 
