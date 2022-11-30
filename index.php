@@ -51,9 +51,9 @@ var yArray = [7,8,8,9,9,9,10,11,14,14,15];
 
 // Define Data
 var data = [{
-  x:xArray,
-  y:yArray,
-  mode:"markers"
+  x: xArray,
+  y: yArray,
+  mode:"lines"
 }];
 
 // Define Layout
