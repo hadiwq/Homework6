@@ -67,7 +67,7 @@ var1 layout = {
 };
 
 // Display using Plotly
-Plotly.newPlot("myPlot", data, layout);
+Plotly.newPlot("myPlot1", data, layout);
 </script>
 
 </body>
