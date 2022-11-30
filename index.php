@@ -49,18 +49,18 @@ Plotly.newPlot("myPlot", data, layout);
 <div id="myPlot" style="width:100%;max-width:700px"></div>
 
 <script>
-var xArray = [50,60,70,80,90,100,110,120,130,140,150];
-var yArray = [7,8,8,9,9,9,10,11,14,14,15];
+var1 xArray = [50,60,70,80,90,100,110,120,130,140,150];
+var1 yArray = [7,8,8,9,9,9,10,11,14,14,15];
 
 // Define Data
-var data = [{
+var1 data = [{
   x: xArray,
   y: yArray,
   mode:"lines"
 }];
 
 // Define Layout
-var layout = {
+var1 layout = {
   xaxis: {range: [40, 160], title: "Square Meters"},
   yaxis: {range: [5, 16], title: "Price in Millions"},  
   title: "House Prices vs. Size"
