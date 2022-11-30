@@ -46,7 +46,7 @@ Plotly.newPlot("myPlot", data, layout);
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <body>
 
-<div id="myPlot" style="width:100%;max-width:700px"></div>
+<div id="myPlot1" style="width:100%;max-width:700px"></div>
 
 <script>
 var1 xArray = [50,60,70,80,90,100,110,120,130,140,150];
